@@ -32,7 +32,7 @@ public class HotelFXApp extends Application {
     private static final String SUCCESS      = "#4ade80";
     private static final String DANGER       = "#f87171";
 
-    private Label statusBar = new Label("Welcome to AAI Hotel Management");
+    private Label statusBar = new Label("Welcome to AAIR Hotel Management");
 
     @Override
     public void start(Stage stage) {
@@ -46,7 +46,7 @@ public class HotelFXApp extends Application {
         Scene scene = new Scene(root, 950, 650);
         scene.getStylesheets().add(inlineCSS());
 
-        stage.setTitle("AAI — Hotel Management");
+        stage.setTitle("AAIR — Hotel Management");
         stage.setScene(scene);
         stage.show();
 
@@ -55,7 +55,7 @@ public class HotelFXApp extends Application {
 
     // ── Header ───────────────────────────────────────────────────────
     private HBox buildHeader() {
-        Label logo = new Label("AAI");
+        Label logo = new Label("AAIR");
         logo.setStyle("-fx-font-family: 'Georgia'; -fx-font-size: 22px; " +
                       "-fx-font-weight: bold; -fx-text-fill: " + ACCENT_GOLD + ";");
 
@@ -233,7 +233,7 @@ public class HotelFXApp extends Application {
             Integer prev = roomBox.getValue();
             roomBox.getItems().setAll(
                 rooms.stream()
-                     .filter(Room::isAvailable)
+                     
                      .map(Room::getRoomNumber)
                      .toList()
             );
